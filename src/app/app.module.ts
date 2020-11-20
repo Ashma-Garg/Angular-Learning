@@ -8,7 +8,12 @@ import { AuthorService } from './authors.service';
 import { FavouriteComponent } from './favourite/favourite.component';
 import { FilterTitleCaseComponent } from './filter-title-case/filter-title-case.component';
 import { TitleCasePi } from './titlecase.pipe';
+import { NewCourseFormComponent } from './new-course-form/new-course-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http'
 
+import { PostTryComponent } from './post-try/post-try.component';
+import { PostsComponent } from './posts/posts.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +21,18 @@ import { TitleCasePi } from './titlecase.pipe';
     AuthorsComponent,
     FavouriteComponent,
     FilterTitleCaseComponent,
-    TitleCasePi    
+    TitleCasePi,
+    NewCourseFormComponent,
+    PostTryComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
+  
   ],
   providers: [
     AuthorService

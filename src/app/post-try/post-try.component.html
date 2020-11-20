@@ -1,0 +1,11 @@
+<p>post-try works!</p>
+<form>
+    <input (keyup.enter)="additem(title)" #title type="text" class="form-control">
+</form>
+<ul class="list-group">
+    <li
+    *ngFor="let h of hu"
+     class="list-group-item">
+        {{h.title}}
+    </li>
+</ul>
