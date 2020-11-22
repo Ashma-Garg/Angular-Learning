@@ -1,1 +1,12 @@
-<p>posts works!</p>
+<mat-card>
+    <mat-form-field>
+        <input matInput [(ngModel)]="enteredTitle" placeholder="Enter Title">
+    </mat-form-field>
+    <mat-form-field>
+        <textarea matInput [(ngModel)]="enteredContent" placeholder="Enter Content" rows="10" cols="30"></textarea>
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="AddPost()">Add Post</button>
+    <hr>
+</mat-card>
+
+

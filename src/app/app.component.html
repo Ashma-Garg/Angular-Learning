@@ -1,7 +1,10 @@
+<app-header></app-header>
 <h1>{{title}}</h1>
-<app-authors></app-authors>
+<!-- <app-authors></app-authors>
 <app-favourite></app-favourite>
 <app-filter-title-case></app-filter-title-case>
-<app-new-course-form></app-new-course-form>
+<app-new-course-form></app-new-course-form> -->
+<app-posts (posts)="onPostAdd($event)"></app-posts>
+<app-post-list [posts]="addedpost"></app-post-list>
 
-<app-post-try></app-post-try>
+<!-- <app-post-try></app-post-try> -->
