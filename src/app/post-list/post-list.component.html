@@ -1,9 +1,11 @@
 <main>
-<mat-accordion>
-    <mat-expansion-panel *ngFor="let posts of posts">
+<mat-accordion multi="true">
+    <mat-expansion-panel *ngFor="let posts of backendNotes">
         <mat-expansion-panel-header>
+            <!-- {{backendNotes.title}} -->
             {{posts.title}}
         </mat-expansion-panel-header>
+        <!-- {{backendNotes.content}} -->
         {{posts.content}}
     </mat-expansion-panel>
 </mat-accordion>

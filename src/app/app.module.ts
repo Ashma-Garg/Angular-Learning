@@ -23,7 +23,8 @@ import { PostTryComponent } from './post-try/post-try.component';
 import { PostsComponent } from './posts/posts.component';
 import { HeaderComponent } from './header/header.component';
 import { PostListComponent } from './post-list/post-list.component';
-
+import {PostService} from '../servives/post.service';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { PostListComponent } from './post-list/post-list.component';
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
@@ -54,7 +56,9 @@ import { PostListComponent } from './post-list/post-list.component';
   
   ],
   providers: [
-    AuthorService
+    AuthorService,
+    PostService
+
   ],
   bootstrap: [AppComponent]
 })
