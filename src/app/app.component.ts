@@ -6,7 +6,7 @@ import { PostService } from 'src/servives/post.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent  implements OnInit{
-  title ='Hello-World- Our First Project';
+  title ='My Notes- Our First Project';
   addedNotes=[];
   BackendNotes:any;
   constructor(){}
@@ -19,6 +19,13 @@ export class AppComponent  implements OnInit{
 
   onPostAdd(post){
     this.addedNotes.push(post);
+  }
+  PostDeleted(deletedPost){
+    for(var i=0;i<this.addedNotes.length;i++){
+      if(this.addedNotes[i]["_id"]===deletedPost){
+        this.addedNotes.splice(i,1);
+      }
+    }
   }
   ngOnInit(){
   }

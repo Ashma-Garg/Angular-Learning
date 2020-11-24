@@ -14,6 +14,6 @@
 <app-filter-title-case></app-filter-title-case>
 <app-new-course-form></app-new-course-form> -->
 <app-posts (posts)="onPostLoad($event)" (addedPost)="onPostAdd($event)"></app-posts>
-<app-post-list [backendNotes]="addedNotes"></app-post-list>
+<app-post-list [backendNotes]="addedNotes" (deletePost)="PostDeleted($event)"></app-post-list>
 
 <!-- <app-post-try></app-post-try> -->

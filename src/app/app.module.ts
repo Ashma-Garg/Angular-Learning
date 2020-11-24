@@ -12,6 +12,7 @@ import {MatToolbarModule} from '@angular/material/toolbar'
 import {MatExpansionModule} from '@angular/material/expansion'
 
 import { TitleCasePi } from './titlecase.pipe';
+import {SubstringPipe} from './substring.pipe';
 
 import { AppComponent } from './app.component';
 import { AuthorsComponent } from './authors/authors.component';
@@ -33,6 +34,7 @@ import { CommonModule } from '@angular/common';
     FavouriteComponent,
     FilterTitleCaseComponent,
     TitleCasePi,
+    SubstringPipe,
     NewCourseFormComponent,
     PostTryComponent,
     PostsComponent,

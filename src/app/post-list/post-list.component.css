@@ -3,3 +3,9 @@ main{
     margin:auto;
     margin-top:2rem;
 }
+mat-expansion-panel{
+    margin-top:1.05em
+}
+[contenteditable] {
+    outline: 0px solid transparent;
+  }
